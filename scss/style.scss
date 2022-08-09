@@ -1,2 +1,309 @@
-@import url(./nullstyle.scss);
+@import "nullstyle";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Roboto:wght@400;700&display=swap');
+
+// <========== BODY ==========>
+
+.body {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 28px;
+    color: #000000;
+    background-color: #F0F8FF;
+}
+
+// <========== MAIN ==========>
+
+.main {
+    display: grid;
+    grid-template-columns: 307px auto;
+    grid-template-rows: minmax(100vh, 100%);
+
+    &__body {
+        grid-column: 2;
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 98px auto;
+    }
+
+    &__header {
+        grid-column: 1;
+        grid-row: 1;
+        background-color: #fff;
+    }
+
+    &__content {
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
+
+// <========== LOGO ==========>
+
+.logo {
+    display: flex;
+    align-items: center;
+    transition: 0.4s;
+
+    &__img {
+        width: 71.97px;
+        height: 29.53px;
+    }
+    &__text {
+        font-weight: 800;
+        font-size: 22.1443px;
+        line-height: 27px;
+        color: #000000;
+        span {
+            color: #2F80ED;
+        }
+    }
+    &:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+}
+
+// <========== SDIEBAR ==========>
+
+.sidebar {
+    padding: 41px 49px 41px 49px;
+    grid-column: 1;
+    grid-row: 1;
+    background-color: #FFFFFF;
+    border-right: 1px solid #F0F8FF;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 77px;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 49px;
+        align-items: center;
+    }
+
+    &__mainmenu {
+    }
+
+    &__separator {
+        display: block;
+        width: 175px;
+        height: 1.5px;
+        background-color: rgba(232, 234, 236, 0.78);
+    }
+
+    &__submenu {
+    }
+}
+.menu {
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    &__item {
+        width: 208px;
+        height: 49px;
+    }
+
+    &__link {
+        width: 208px;
+        height: 49px;
+        padding-left: 35px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: 0.4s;
+        &_active {
+            background: #D5E6FB;
+            border-radius: 8.83405px;
+            color: #0060FF;
+            .menu__icon path{
+                fill: #0060FF;
+            }
+        }
+        &:hover {
+            cursor: pointer;
+            background: #D5E6FB;
+            border-radius: 8.83405px;
+            color: #0060FF;
+            .menu__icon path{
+                fill: #0060FF;
+            }
+        }
+    }
+
+    &__icon {
+        width: 28.14px;
+        height: 28.14px;
+        path {
+            transition: 0.4s;
+        }
+    }
+
+    &__text {
+    }
+}
+.submenu {
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    &__item {
+        width: 208px;
+        height: 49px;
+    }
+
+    &__link {
+        width: 208px;
+        height: 49px;
+        padding-left: 35px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: 0.4s;
+        &:hover {
+            cursor: pointer;
+            background: #D5E6FB;
+            border-radius: 8.83405px;
+            color: #0060FF;
+            .submenu__icon path{
+                fill: #0060FF;
+            }
+        }
+    }
+
+    &__icon {
+        width: 28.14px;
+        height: 28.14px;
+        path {
+            transition: 0.4s;
+        }
+    }
+
+    &__text {
+    }
+}
+
+
+// <========== HEADER ==========>
+
+.main {
+
+    &__header {
+    }
+}
+.header {
+    // display: flex;
+    // align-items: center;
+    padding: 21px 39px 18px 39px;
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__search {
+        width: 626px;
+        height: 50px;
+        background: #FFFFFF;
+        border: 1.3px solid rgba(196, 202, 205, 0.4);
+        border-radius: 57px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 10px;
+        padding: 0 20px;
+        &::placeholder {
+            color: rgba(98, 109, 125, 0.4);
+        }
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: 29px;
+    }
+
+    &__bell {
+        width: 26.07px;
+        height: 28px;
+    }
+
+    &__profile {
+    }
+}
+.profile {
+    width: 256px;
+    height: 59px;
+    background: #F2F8FF;
+    border-radius: 12.6265px;
+    padding: 0 16.84px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 9px;
+
+    &__image {
+        max-width: 45.46px;
+        max-height: 45.46px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    &__name {
+        font-weight: 600;
+        font-size: 13.4683px;
+        line-height: 28px;
+        color: #1F1F1F;
+    }
+
+    &__email {
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 28px;
+        color: #5E6E78;
+    }
+
+    &__popup {
+        width: 5px;
+        height: 20px;
+        margin-left: auto;
+        transition: 0.4s;
+        path {
+            transition: 0.4s;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+        &:hover path {
+            fill: #1F1F1F;
+        }
+    }
+
+    &__popup-img {
+        width: 5px;
+        height: 20px;
+    }
+}
