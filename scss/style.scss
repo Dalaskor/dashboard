@@ -1,6 +1,17 @@
 @import "nullstyle";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Roboto:wght@400;700&display=swap');
 
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+    width: 2px; /* ширина для вертикального скролла */
+    height: 2px; /* высота для горизонтального скролла */
+    background-color: #F8F8F9;
+}
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 96, 255, 0.1);
+}
+
 // <========== BODY ==========>
 
 .body {
@@ -427,6 +438,9 @@
 
     &__cryptro {
     }
+
+    &__markets {
+    }
 }
 
 // <========== BALANCE BLOCK ==========>
@@ -813,6 +827,169 @@
                 background-color: #D5E6FB;
                 color: #0060FF;
             }
+        }
+    }
+}
+
+// <========== MARKETS ==========>
+
+.markets {
+    width: 478px;
+    height: 428px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 37px 33px 14px 33px;
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+        color: #000000;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 8px;
+    }
+
+    &__button {
+        font-weight: 600;
+        font-size: 10.5691px;
+        line-height: 23px;
+        color: #000000;
+        padding: 5px 13px;
+        background: #F8F8F9;
+        border-radius: 7.39837px;
+        transition: 0.4s;
+
+        &_active {
+            color: #0060FF;
+            background: #F2F8FF;
+        }
+
+        &:hover {
+            cursor: pointer;
+            color: #0060FF;
+            background: #F2F8FF;
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        max-height: 270px;
+        overflow: auto;
+        scrollbar-color: rgba(0, 96, 255, 0.1) #F8F8F9;
+        scrollbar-width: thin;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 0.4px solid rgba(0, 0, 0, 0.05);
+        padding: 6px 0px;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    &__name {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 52px;
+    }
+
+    &__usdt {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 28px;
+        color: #000000;
+    }
+
+    &__fullname {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 22px;
+        color: #5E6E78;
+    }
+
+    &__prices {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 52px;
+    }
+
+    &__total {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 22px;
+        color: #000000;
+    }
+
+    &__proc {
+        width: 58px;
+        height: 22px;
+        background: rgba(235, 87, 87, 0.2);
+        border-radius: 69px;
+        font-weight: 600;
+        font-size: 9.79867px;
+        line-height: 22px;
+        color: #EB5757;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &_green {
+            background: rgba(33, 150, 83, 0.2);
+            color: #219653;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    &__viewall {
+        width: 60px;
+        height: 26px;
+        background: rgba(255, 255, 255, 0.22);
+        border: 0.4px solid rgba(0, 0, 0, 0.1);
+        border-radius: 7px;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 22px;
+        color: rgba(0, 0, 0, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.4s;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.7;
         }
     }
 }
