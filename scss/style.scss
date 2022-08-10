@@ -414,9 +414,15 @@
 .content {
 
     &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     &__balance {
+    }
+
+    &__cryptro {
     }
 }
 
@@ -455,6 +461,8 @@
     }
 
     &__icon {
+        width: 28px;
+        height: 25px;
     }
 
     &__title {
@@ -465,6 +473,8 @@
     }
 
     &__eye {
+        width: 22px;
+        height: 16px;
         path {
             transition: 0.4s;
         }
@@ -518,5 +528,125 @@
         font-size: 11px;
         line-height: 22px;
         color: #219653;
+    }
+}
+
+// <========== CRYPTO BLOCK ==========>
+
+.crypto {
+    width: 325px;
+    height: 174px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+
+    &__body {
+        display: flex;
+        align-items: center;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 21.5px;
+    }
+
+    &__head {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &__image {
+        width: 44px;
+        height: 43px;
+        background: rgba(255, 156, 7, 0.2);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &_purple {
+            background: rgba(77, 33, 255, 0.2);
+        }
+
+        &_red {
+            background: #FFD2D2;
+        }
+    }
+
+    &__icon {
+        width: 19px;
+        height: 25px;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;   
+    }
+
+    &__usdt {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+        color: #000000;
+    }
+
+    &__name {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 22px;
+        color: #626D7D;
+    }
+
+    &__total {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 22px;
+        color: #000000;
+    }
+
+    &__graphic {
+        width: 137px;
+        height: 50px;
+    }
+
+    &__stat {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__pnl {
+        font-weight: 500;
+        color: #626D7D;
+    }
+
+    &__sum {
+        color: #EB5757;
+
+        &_green {
+            color: #219653;
+        }
+    }
+
+    &__proc {
+        width: 62px;
+        height: 23px;
+        background: rgba(33, 150, 83, 0.2);
+        border-radius: 60px;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 22px;
+        color: #219653;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

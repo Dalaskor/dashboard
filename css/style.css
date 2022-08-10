@@ -403,6 +403,11 @@ img {
   color: #0060FF;
 }
 
+.content__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .balance {
   width: 302px;
   height: 174px;
@@ -432,11 +437,19 @@ img {
   align-items: center;
   justify-content: center;
 }
+.balance__icon {
+  width: 28px;
+  height: 25px;
+}
 .balance__title {
   font-weight: 600;
   font-size: 16px;
   line-height: 28px;
   color: #000000;
+}
+.balance__eye {
+  width: 22px;
+  height: 16px;
 }
 .balance__eye path {
   transition: 0.4s;
@@ -484,4 +497,105 @@ img {
   font-size: 11px;
   line-height: 22px;
   color: #219653;
+}
+
+.crypto {
+  width: 325px;
+  height: 174px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+.crypto__body {
+  display: flex;
+  align-items: center;
+}
+.crypto__info {
+  display: flex;
+  flex-direction: column;
+  gap: 21.5px;
+}
+.crypto__head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.crypto__image {
+  width: 44px;
+  height: 43px;
+  background: rgba(255, 156, 7, 0.2);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.crypto__image_purple {
+  background: rgba(77, 33, 255, 0.2);
+}
+.crypto__image_red {
+  background: #FFD2D2;
+}
+.crypto__icon {
+  width: 19px;
+  height: 25px;
+}
+.crypto__title {
+  display: flex;
+  flex-direction: column;
+}
+.crypto__usdt {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: #000000;
+}
+.crypto__name {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 22px;
+  color: #626D7D;
+}
+.crypto__total {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+  color: #000000;
+}
+.crypto__graphic {
+  width: 137px;
+  height: 50px;
+}
+.crypto__stat {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.crypto__pnl {
+  font-weight: 500;
+  color: #626D7D;
+}
+.crypto__sum {
+  color: #EB5757;
+}
+.crypto__sum_green {
+  color: #219653;
+}
+.crypto__proc {
+  width: 62px;
+  height: 23px;
+  background: rgba(33, 150, 83, 0.2);
+  border-radius: 60px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 22px;
+  color: #219653;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
