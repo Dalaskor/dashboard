@@ -408,3 +408,115 @@
         }
     }
 }
+
+// <========== MAIN CONTENT ==========>
+
+.content {
+
+    &__row {
+    }
+
+    &__balance {
+    }
+}
+
+// <========== BALANCE BLOCK ==========>
+
+.balance {
+    width: 302px;
+    height: 174px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 23px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__name {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__image {
+        width: 44px;
+        height: 43px;
+        background: rgba(47, 128, 237, 0.2);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__icon {
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+        color: #000000;
+    }
+
+    &__eye {
+        path {
+            transition: 0.4s;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+        &:hover path {
+            fill: #1f1f1f52;
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__count {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 28px;
+        color: #000000;
+    }
+
+    &__profit {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__month {
+        color: #626D7D;
+    }
+
+    &__plussum {
+        color: #219653;
+    }
+
+    &__plusproc {
+        width: 62.33px;
+        height: 23px;
+        background: rgba(33, 150, 83, 0.2);
+        border-radius: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 22px;
+        color: #219653;
+    }
+}
