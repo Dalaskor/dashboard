@@ -37,6 +37,8 @@
     &__content {
         grid-column: 1;
         grid-row: 2;
+        max-width: 1411px;
+        padding: 28px;
     }
 }
 
@@ -199,14 +201,7 @@
 
 // <========== HEADER ==========>
 
-.main {
-
-    &__header {
-    }
-}
 .header {
-    // display: flex;
-    // align-items: center;
     padding: 21px 39px 18px 39px;
 
     &__body {
@@ -225,8 +220,20 @@
         font-size: 15px;
         line-height: 10px;
         padding: 0 20px;
+        transition: 0.4s;
         &::placeholder {
             color: rgba(98, 109, 125, 0.4);
+        }
+        &:focus {
+            border: 1.3px solid #0060FF;
+        }
+    }
+    
+    &__notify {
+        transition: 0.4s;
+        &:hover {
+            cursor: pointer;
+            opacity: 0.7;
         }
     }
 
@@ -305,5 +312,99 @@
     &__popup-img {
         width: 5px;
         height: 20px;
+    }
+}
+
+// <========== POPUP MENU ==========>
+
+.popupmenu {
+    display: none;
+    position: fixed;
+    right: 37px;
+    top: 75px;
+    transition: 0.4s;
+
+    &_active {
+        display: block;
+        transition: 0.4s;
+    }
+    
+    &__body {
+        background-color: #F2F8FF;
+        border-radius: 12px;
+        border: 1px solid #b6b6b688;
+        box-shadow: 3px 3px 3px #b6b6b63d;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+
+    &__item {
+    }
+
+    &__link {
+        width: 100px;
+        padding: 15px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #000;
+        transition: 0.4s;
+        &:hover {
+            cursor: pointer;
+            background-color: #D5E6FB;
+            color: #0060FF;
+        }
+    }
+}
+
+// <========== NOTIFICATIONS MENU ==========>
+
+.notifymenu {
+    display: none;
+    position: fixed;
+    right: 150px;
+    top: 65px;
+    transition: 0.4s;
+
+    &_active {
+        display: block;
+        transition: 0.4s;
+    }
+
+    &__body {
+        background-color: #F2F8FF;
+        border-radius: 12px;
+        border: 1px solid #b6b6b688;
+        box-shadow: 3px 3px 3px #b6b6b63d;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+
+    &__item {
+    }
+
+    &__link {
+        width: 350px;
+        padding: 15px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #000;
+        transition: 0.4s;
+        &:hover {
+            cursor: pointer;
+            background-color: #D5E6FB;
+            color: #0060FF;
+        }
     }
 }

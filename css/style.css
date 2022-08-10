@@ -95,6 +95,8 @@ img {
 .main__content {
   grid-column: 1;
   grid-row: 2;
+  max-width: 1411px;
+  padding: 28px;
 }
 
 .logo {
@@ -238,6 +240,7 @@ img {
   font-size: 15px;
   line-height: 10px;
   padding: 0 20px;
+  transition: 0.4s;
 }
 .header__search::-moz-placeholder {
   color: rgba(98, 109, 125, 0.4);
@@ -247,6 +250,16 @@ img {
 }
 .header__search::placeholder {
   color: rgba(98, 109, 125, 0.4);
+}
+.header__search:focus {
+  border: 1.3px solid #0060FF;
+}
+.header__notify {
+  transition: 0.4s;
+}
+.header__notify:hover {
+  cursor: pointer;
+  opacity: 0.7;
 }
 .header__menu {
   display: flex;
@@ -312,4 +325,80 @@ img {
 .profile__popup-img {
   width: 5px;
   height: 20px;
+}
+
+.popupmenu {
+  display: none;
+  position: fixed;
+  right: 37px;
+  top: 75px;
+  transition: 0.4s;
+}
+.popupmenu_active {
+  display: block;
+  transition: 0.4s;
+}
+.popupmenu__body {
+  background-color: #F2F8FF;
+  border-radius: 12px;
+  border: 1px solid rgba(182, 182, 182, 0.5333333333);
+  box-shadow: 3px 3px 3px rgba(182, 182, 182, 0.2392156863);
+}
+.popupmenu__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.popupmenu__link {
+  width: 100px;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  transition: 0.4s;
+}
+.popupmenu__link:hover {
+  cursor: pointer;
+  background-color: #D5E6FB;
+  color: #0060FF;
+}
+
+.notifymenu {
+  display: none;
+  position: fixed;
+  right: 150px;
+  top: 65px;
+  transition: 0.4s;
+}
+.notifymenu_active {
+  display: block;
+  transition: 0.4s;
+}
+.notifymenu__body {
+  background-color: #F2F8FF;
+  border-radius: 12px;
+  border: 1px solid rgba(182, 182, 182, 0.5333333333);
+  box-shadow: 3px 3px 3px rgba(182, 182, 182, 0.2392156863);
+}
+.notifymenu__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.notifymenu__link {
+  width: 350px;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  transition: 0.4s;
+}
+.notifymenu__link:hover {
+  cursor: pointer;
+  background-color: #D5E6FB;
+  color: #0060FF;
 }
