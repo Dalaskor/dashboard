@@ -1,6 +1,4 @@
 const courseChartElem = document.getElementById('courseChart').getContext('2d');
-const DATA_COUNT = 7;
-const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
 
 const labels = ['Jul 18', 'Jul 19', 'Jul 20', 'Jul 21', 'Jul 22'];
 const courseData = {
@@ -26,7 +24,7 @@ const courseConfig = {
     type: 'bar',
     data: courseData,
     options: {
-      responsive: true,
+      responsive: false,
       plugins: {
         legend: {
             display: false,
