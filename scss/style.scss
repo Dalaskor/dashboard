@@ -135,6 +135,7 @@
         align-items: center;
         gap: 10px;
         transition: 0.4s;
+        color: #000;
         &_active {
             background: #D5E6FB;
             border-radius: 8.83405px;
@@ -186,6 +187,7 @@
         align-items: center;
         gap: 10px;
         transition: 0.4s;
+        color: #000;
         &:hover {
             cursor: pointer;
             background: #D5E6FB;

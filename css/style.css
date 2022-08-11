@@ -176,6 +176,7 @@ img {
   align-items: center;
   gap: 10px;
   transition: 0.4s;
+  color: #000;
 }
 .menu__link_active {
   background: #D5E6FB;
@@ -218,6 +219,7 @@ img {
   align-items: center;
   gap: 10px;
   transition: 0.4s;
+  color: #000;
 }
 .submenu__link:hover {
   cursor: pointer;
